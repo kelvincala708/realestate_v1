@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Way Home Real Estate - Private luxury real estate advisory for clients seeking rare homes, strategic guidance, and exceptional service across the United States.">
+    <title>Way Home Real Estate | Luxury Properties</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Outer Black Background Wrapper -->
+    <div class="outer-bg">
+        <!-- Main Luxury Canvas -->
+        <div class="luxury-canvas">
+            
+            <!-- Header (Merged with Hero) -->
+            <header class="site-header" id="home">
+                <div class="topbar">
+                    <a href="#home" class="logo">
+                        <img src="assets/images/logo.png" alt="Way Home Real Estate" class="logo-img">
+                    </a>
+                    
+                    <nav class="nav" id="nav">
+                        <ul class="nav-list">
+                            <li><a href="#home" class="nav-link">Home</a></li>
+                            <li><a href="#properties" class="nav-link">Properties</a></li>
+                            <li><a href="#services" class="nav-link">Services</a></li>
+                            <li><a href="#agents" class="nav-link">Agents</a></li>
+                            <li><a href="#about" class="nav-link">About Us</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <a href="#contact" class="btn btn-primary header-cta">Find Your Way Home</a>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- Hero Block (Inside Header) -->
+                <div class="hero-block">
+                    <div class="hero-top">
+                        <div class="hero-copy">
+                            <h1 class="animate-fade-up">Find a place worthy of the life you are building</h1>
+                            <p class="hero-note animate-fade-up delay-1">We make deals happen—no magic wand needed.</p>
+                            <div class="hero-actions animate-fade-up delay-2">
+                                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                                <a href="#properties" class="btn btn-secondary">Browse Properties</a>
+                            </div>
+                        </div>
+                        <p class="hero-description animate-fade-up delay-1">
+                            Exclusive villas, private estates, and refined residences selected for clients who expect discretion, strategy, and exceptional service at every step.
+                        </p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&h=800&fit=crop" alt="Luxury Villa" class="hero-image animate-fade-up">
+                </div>
+            </header>
+
+            <main>
+                <!-- Search/Filter Section -->
+                <section class="search-section section">
+                    <div class="search-intro">
+                        <h2 class="animate-fade-up">We help you find the home that feels entirely yours</h2>
+                        <p class="animate-fade-up delay-1">From private villas to off-market estates, our advisors curate residences around your lifestyle, investment goals, and long-term vision.</p>
+                    </div>
+                    
+                    <div class="search-panel animate-fade-up delay-2">
+                        <div class="form-group">
+                            <label for="transaction">Transaction</label>
+                            <select id="transaction" name="transaction">
+                                <option value="buy">Buy</option>
+                                <option value="rent">Rent</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="">All Locations</option>
+                                <option value="california">California</option>
+                                <option value="colorado">Colorado</option>
+                                <option value="florida">Florida</option>
+                                <option value="texas">Texas</option>
+                                <option value="arizona">Arizona</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="property-type">Property Type</label>
+                            <select id="property-type" name="property-type">
+                                <option value="">All Types</option>
+                                <option value="villa">Villa</option>
+                                <option value="estate">Estate</option>
+                                <option value="penthouse">Penthouse</option>
+                                <option value="mansion">Mansion</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price Range</label>
+                            <select id="price" name="price">
+                                <option value="">Any Price</option>
+                                <option value="5-7">$5M - $7M</option>
+                                <option value="7-10">$7M - $10M</option>
+                                <option value="10+">$10M+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="">Any</option>
+                                <option value="4">4+ Beds</option>
+                                <option value="5">5+ Beds</option>
+                                <option value="6">6+ Beds</option>
+                            </select>
+                        </div>
+                        <div class="search-actions">
+                            <button type="submit" class="btn btn-primary btn-small">Show Properties</button>
+                            <a href="#contact" class="search-link">Request Private Listings</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Properties Section -->
+                <section class="properties-section section" id="properties">
+                    <div class="properties-header">
+                        <h2 class="animate-fade-up">Featured private residences</h2>
+                        <p class="animate-fade-up delay-1">A curated selection of high-value villas currently available for private review.</p>
+                    </div>
+                    
+                    <div class="properties-grid">
+                        <!-- Property 1 -->
+                        <article class="property-card animate-fade-up delay-1">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&h=400&fit=crop" alt="Aurelia Crest Villa" class="property-image">
+                                <span class="property-badge">Featured</span>
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">Aurelia Crest Villa</h3>
+                                <p class="property-location">Malibu, California</p>
+                                <p class="property-price">$7,850,000</p>
+                                <div class="property-details">
+                                    <span>5 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>6 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>7,200 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Property 2 -->
+                        <article class="property-card animate-fade-up delay-2">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop" alt="The Marlow Estate" class="property-image">
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">The Marlow Estate</h3>
+                                <p class="property-location">Aspen, Colorado</p>
+                                <p class="property-price">$11,200,000</p>
+                                <div class="property-details">
+                                    <span>6 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>7 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>9,100 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Property 3 -->
+                        <article class="property-card animate-fade-up delay-3">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Bel Air Horizon House" class="property-image">
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">Bel Air Horizon House</h3>
+                                <p class="property-location">Los Angeles, California</p>
+                                <p class="property-price">$9,450,000</p>
+                                <div class="property-details">
+                                    <span>5 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>5.5 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>6,850 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Property 4 -->
+                        <article class="property-card animate-fade-up delay-1">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Palm Grove Residence" class="property-image">
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">Palm Grove Residence</h3>
+                                <p class="property-location">Miami, Florida</p>
+                                <p class="property-price">$6,900,000</p>
+                                <div class="property-details">
+                                    <span>4 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>5 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>5,600 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Property 5 -->
+                        <article class="property-card animate-fade-up delay-2">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Cavalli Lake Villa" class="property-image">
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">Cavalli Lake Villa</h3>
+                                <p class="property-location">Austin, Texas</p>
+                                <p class="property-price">$5,750,000</p>
+                                <div class="property-details">
+                                    <span>5 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>6 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>6,300 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Property 6 -->
+                        <article class="property-card animate-fade-up delay-3">
+                            <div class="property-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600566753190-323a97a554db?w=600&h=400&fit=crop" alt="Silverline Estate" class="property-image">
+                            </div>
+                            <div class="property-content">
+                                <h3 class="property-title">Silverline Estate</h3>
+                                <p class="property-location">Scottsdale, Arizona</p>
+                                <p class="property-price">$4,980,000</p>
+                                <div class="property-details">
+                                    <span>4 Beds</span>
+                                    <span class="divider">/</span>
+                                    <span>5 Baths</span>
+                                    <span class="divider">/</span>
+                                    <span>5,200 sq ft</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="properties-cta animate-fade-up">
+                        <p class="properties-cta-text">Didn't find the right one? Speak with our advisors for private and off-market listings.</p>
+                        <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                    </div>
+                </section>
+
+                <!-- Services Section -->
+                <section class="services-section section" id="services">
+                    <div class="services-intro">
+                        <h2 class="animate-fade-up">See what we offer and how it works</h2>
+                        <p class="animate-fade-up delay-1">Our service is designed for discerning buyers and sellers who value privacy, precision, and access to opportunities rarely seen on the open market.</p>
+                    </div>
+                    
+                    <div class="services-layout">
+                        <div class="services-panel animate-fade-up delay-1">
+                            <div class="service-item">
+                                <span class="service-number">01</span>
+                                <h3>Private Consultation</h3>
+                                <p class="service-subtitle">Strategic Wealth & Lifestyle Alignment</p>
+                                <p class="service-text">We begin with a confidential consultation to understand your lifestyle, privacy requirements, investment goals, and long-term property vision.</p>
+                            </div>
+                            
+                            <div class="service-item">
+                                <span class="service-number">02</span>
+                                <h3>Property Selection</h3>
+                                <p class="service-subtitle">Silent Market Access</p>
+                                <p class="service-text">Our advisors source public, private, and off-market residences through trusted networks, giving clients access to rare opportunities before they reach the wider market.</p>
+                            </div>
+                            
+                            <div class="service-item">
+                                <span class="service-number">03</span>
+                                <h3>Viewing & Shortlist</h3>
+                                <p class="service-subtitle">Immersive Property Review</p>
+                                <p class="service-text">Through cinematic previews, VR tours, and discreet inspections, we refine your options before arranging private viewings.</p>
+                            </div>
+                            
+                            <div class="service-item">
+                                <span class="service-number">04</span>
+                                <h3>Purchase Guidance</h3>
+                                <p class="service-subtitle">Complete Advisory Support</p>
+                                <p class="service-text">From negotiation to legal coordination and post-acquisition concierge, we manage the process with precision and discretion.</p>
+                            </div>
+                            
+                            <div class="services-cta">
+                                <a href="#contact" class="btn btn-primary">Explore Our Services</a>
+                            </div>
+                        </div>
+                        
+                        <div class="services-image-wrapper animate-fade-up delay-2">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=1000&fit=crop" alt="Luxury Service" class="services-image">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Agents Section -->
+                <section class="agents-section section" id="agents">
+                    <div class="agents-header">
+                        <h2 class="animate-fade-up">Expert advisors</h2>
+                        <p class="animate-fade-up delay-1">Meet the specialists guiding private clients through exceptional real estate decisions.</p>
+                    </div>
+                    
+                    <div class="agents-grid">
+                        <!-- Agent 1 -->
+                        <article class="agent-card animate-fade-up delay-1">
+                            <div class="agent-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Olivia Bennett" class="agent-image">
+                            </div>
+                            <div class="agent-info">
+                                <h3 class="agent-name">Olivia Bennett</h3>
+                                <p class="agent-title">Senior Luxury Property Advisor</p>
+                                <p class="agent-specialty">Coastal villas & private estates</p>
+                                <a href="tel:+13105550174" class="agent-phone">+1 (310) 555-0174</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Agent 2 -->
+                        <article class="agent-card animate-fade-up delay-2">
+                            <div class="agent-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop" alt="Marcus Ellington" class="agent-image">
+                            </div>
+                            <div class="agent-info">
+                                <h3 class="agent-name">Marcus Ellington</h3>
+                                <p class="agent-title">Director of Private Client Relations</p>
+                                <p class="agent-specialty">Off-market acquisitions</p>
+                                <a href="tel:+12125550189" class="agent-phone">+1 (212) 555-0189</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Agent 3 -->
+                        <article class="agent-card animate-fade-up delay-3">
+                            <div class="agent-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop" alt="Sophia Laurent" class="agent-image">
+                            </div>
+                            <div class="agent-info">
+                                <h3 class="agent-name">Sophia Laurent</h3>
+                                <p class="agent-title">International Real Estate Consultant</p>
+                                <p class="agent-specialty">Global relocation & investment residences</p>
+                                <a href="tel:+13055550146" class="agent-phone">+1 (305) 555-0146</a>
+                            </div>
+                        </article>
+                        
+                        <!-- Agent 4 -->
+                        <article class="agent-card animate-fade-up delay-4">
+                            <div class="agent-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Daniel Cross" class="agent-image">
+                            </div>
+                            <div class="agent-info">
+                                <h3 class="agent-name">Daniel Cross</h3>
+                                <p class="agent-title">Estate Portfolio Advisor</p>
+                                <p class="agent-specialty">High-value negotiations</p>
+                                <a href="tel:+14245550162" class="agent-phone">+1 (424) 555-0162</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Stats Section -->
+                <section class="stats-section section" id="about">
+                    <div class="stats-layout">
+                        <div class="stats-content">
+                            <h2 class="animate-fade-up">Reliable guidance for exceptional investments</h2>
+                            <p class="animate-fade-up delay-1">Luxury real estate is more than a purchase. It is a lifestyle decision, an investment position, and often a legacy asset.</p>
+                            
+                            <div class="about-text animate-fade-up delay-2">
+                                <p>Way Home Real Estate offers a discreet, high-touch real estate experience defined by expertise, strategy, and exceptional service. From off-market opportunities to luxury acquisitions, we guide discerning clients through every step with precision and care.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card animate-fade-up delay-1">
+                                <span class="stat-number">$420M+</span>
+                                <span class="stat-label">Private property transactions advised</span>
+                            </div>
+                            <div class="stat-card animate-fade-up delay-2">
+                                <span class="stat-number">120+</span>
+                                <span class="stat-label">Luxury residences represented</span>
+                            </div>
+                            <div class="stat-card animate-fade-up delay-3">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Prime U.S. markets covered</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Investment Offers Section -->
+                <section class="offers-section section">
+                    <div class="offers-header">
+                        <h2 class="animate-fade-up">Offers for investment</h2>
+                        <p class="animate-fade-up delay-1">Selected opportunities designed for lifestyle value and long-term positioning.</p>
+                    </div>
+                    
+                    <div class="offer-list">
+                        <article class="offer-card animate-fade-up delay-1">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop" alt="Oceanfront Collection">
+                            <div class="offer-content">
+                                <h3>Oceanfront Collection</h3>
+                                <p class="offer-text">Exclusive beachfront properties in Malibu and Miami with private access and unparalleled views.</p>
+                                <div class="offer-actions">
+                                    <a href="#contact">Book now</a>
+                                    <a href="#contact">Download brochure</a>
+                                </div>
+                            </div>
+                            <div class="offer-numbers">
+                                <strong>$12,500</strong>
+                                <span>Projected monthly yield</span>
+                                <strong>8.5%</strong>
+                                <span>Estimated annual growth</span>
+                                <strong>$2.4M</strong>
+                                <span>Average entry point</span>
+                            </div>
+                        </article>
+                        
+                        <article class="offer-card animate-fade-up delay-2">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop" alt="Mountain Retreats">
+                            <div class="offer-content">
+                                <h3>Mountain Retreats</h3>
+                                <p class="offer-text">Private mountain estates in Aspen and Colorado Springs offering year-round luxury living.</p>
+                                <div class="offer-actions">
+                                    <a href="#contact">Book now</a>
+                                    <a href="#contact">Download brochure</a>
+                                </div>
+                            </div>
+                            <div class="offer-numbers">
+                                <strong>$9,800</strong>
+                                <span>Projected monthly yield</span>
+                                <strong>7.2%</strong>
+                                <span>Estimated annual growth</span>
+                                <strong>$1.8M</strong>
+                                <span>Average entry point</span>
+                            </div>
+                        </article>
+                        
+                        <article class="offer-card animate-fade-up delay-3">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop" alt="Urban Penthouses">
+                            <div class="offer-content">
+                                <h3>Urban Penthouses</h3>
+                                <p class="offer-text">Sky-high luxury in Los Angeles and New York with panoramic city views and world-class amenities.</p>
+                                <div class="offer-actions">
+                                    <a href="#contact">Book now</a>
+                                    <a href="#contact">Download brochure</a>
+                                </div>
+                            </div>
+                            <div class="offer-numbers">
+                                <strong>$15,200</strong>
+                                <span>Projected monthly yield</span>
+                                <strong>9.1%</strong>
+                                <span>Estimated annual growth</span>
+                                <strong>$3.2M</strong>
+                                <span>Average entry point</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Final CTA Section -->
+                <section class="final-cta" id="contact">
+                    <div class="final-cta-content">
+                        <h2 class="animate-fade-up">Smart selection of premium real estate</h2>
+                        <p class="animate-fade-up delay-1">Whether you are buying your next private residence, expanding a property portfolio, or searching for an off-market opportunity, our advisors are ready to guide your next move.</p>
+                        <div class="final-cta-actions animate-fade-up delay-2">
+                            <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                            <a href="#properties" class="btn btn-secondary">Browse Properties</a>
+                        </div>
+                    </div>
+                    <div class="final-cta-image animate-fade-up delay-1">
+                        <img src="https://images.unsplash.com/photo-1600566753190-323a97a554db?w=400&h=300&fit=crop" alt="Luxury Interior">
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo.png" alt="Way Home Real Estate" class="footer-logo">
+                        <p class="footer-description">Private luxury real estate advisory for clients seeking rare homes, strategic guidance, and exceptional service across the United States.</p>
+                        <div class="footer-contact">
+                            <p><a href="tel:+13105550198">+1 (310) 555-0198</a></p>
+                            <p><a href="mailto:private@wayhomeestate.com">private@wayhomeestate.com</a></p>
+                            <p>9440 Santa Monica Blvd, Beverly Hills, CA 90210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#properties">Properties</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#agents">Agents</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4 class="footer-title">Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <p class="footer-copyright">&copy; 2026 Way Home Real Estate. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
